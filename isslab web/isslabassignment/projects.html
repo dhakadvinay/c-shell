@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Vinay Dhakad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+    <header>
+        <div class="logo">@.Vinay.Dhakad</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-btn">Toggle Theme</button>
+        </nav>
+    </header>
+    <script>
+        let savedTheme = localStorage.getItem('myTheme');
+        if (savedTheme) {
+            document.body.className = savedTheme;
+        }
+    </script>
+
+    <main>
+        <h1>My Projects</h1>
+
+        <div id="filter-container">
+            <button class="filter-btn" data-tech="cc">c</button>
+            <button class="filter-btn" data-tech="python">python</button>
+            <button class="filter-btn" data-tech="riscv">risc-v</button>
+            <button class="filter-btn" data-tech="clear">Show All</button>
+        </div>
+
+        <div class="projects-grid" style="margin-top: 30px;">
+            <article class="project-card scroll-fade" data-tags="python">
+                <h2>Library Managment System</h2>
+                <p><strong>What it does:</strong>This is the system we have made for managing the books in and out in the library by the student with their id .</p>
+                <p><strong>Why I built it:</strong> As usual this is also my CS project in the class 12 .so i made this but i really want to implement all the things that i have learnt so to get practile learning of what i have learnt i have done this project</p>
+                <p><strong>What I would change:</strong> If I had more time, I would improve the project by adding a user interface instead of a command-line interface to make it more user-friendly. I would also enhance features like advanced search, better validation of user inputs, and more efficient handling of large data.</p>
+                <p><strong>Technology tradeoffs:</strong> I used Python with a command-line interface because it is simple to implement and good for learning core concepts. I also connected it with an SQL database for proper data storage and management. However, using CLI limits user experience compared to modern web or GUI-based systems, and scaling the system would require more advanced frameworks.</p>
+            </article>
+  
+            <article class="project-card scroll-fade" data-tags="cc">
+                <h2>Twixt Game</h2>
+                <p><strong>What it does:</strong> This will allow the two palyers to give input and make changes in the game board accroding to the rules and going one of the player wins or one of the player loses the match </p>
+                <p><strong>Why I built it:</strong> At all this is your cpro project so atlast we have to do this for our grades but i really want to implement all the things that i have learnt so to get practile learning of what i have learnt i have done this.</p>               
+                <p><strong>What I would change:</strong> If I get more time then I will try to make the game more interesting by adding some better features like computer player and also try to make the input part more smooth so that user can play easily.</p>
+                <p><strong>Technology tradeoffs:</strong> I have used simple concepts and basic input output which makes it easy to understand and implement. But because of that it does not look very interactive and does not have advanced features like graphics based games.</p>
+            </article>
+
+
+            <article class="project-card scroll-fade" data-tags="riscv">
+                <div class="project-content">
+                    <h2>RISC-V Assembly Calculator</h2>
+                    <p><strong>What it does:</strong> This project contains low-level functions written in RISC-V assembly language to solve math problems like the Collatz conjecture, palindrome checking, and bit counting.</p>
+                    <p><strong>Why I built it:</strong> I built this to understand how software talks to hardware. Writing in high-level languages like Python hides how memory and CPU registers actually work. This forced me to manage memory manually.</p>
+                    <p><strong>What I would change:</strong> Writing in raw assembly is very slow. In the future, I would write the main program in C and only write the most performance-critical math functions in inline assembly.</p>
+                    <p><strong>Technology tradeoffs:</strong> The massive tradeoff here is speed vs developer time. Assembly code runs incredibly fast because it is closest to machine code. However, it takes ten times longer to write a simple loop in assembly than it does in JavaScript.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="filter.js"></script>
+</body>
+</html>

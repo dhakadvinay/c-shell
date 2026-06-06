@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Vinay Dhakad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-light">
+    <script>
+        let savedTheme = localStorage.getItem('myTheme');
+        if (savedTheme) {
+            document.body.className = savedTheme;
+        }
+    </script>
+
+    <header>
+        <div class="logo">@.Vinay.Dhakad</div>
+        <nav>
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-btn">Toggle Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="vinay.jpeg" alt="Vinay Dhakad" class="animate-1 pfp-img">
+            <h1 class="animate-2">Vinay Dhakad</h1>
+            <p class="animate-3"><strong>STUDENT AT IIITH</strong></p> 
+            <div class="animate-4">
+                <a href="projects.html" class="button">My Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vinay Dhakad</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

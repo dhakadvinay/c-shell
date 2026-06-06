@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Vinay Dhakad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+
+    <script>
+        let savedTheme = localStorage.getItem('myTheme');
+        if (savedTheme) {
+            document.body.className = savedTheme;
+        }
+    </script>
+
+    <header>
+        <div class="logo">@.Vinay.Dhakad</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-btn">Toggle Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <img src="vinay.jpeg" alt="Vinay Dhakad" class="profile-pic">
+        
+        <section class="scroll-fade">
+            <h1>About Me</h1>
+            <p>I am a Student Currently Pursuing Btech in Computer Science At International Institute Of Information Technology Hyderabad.My Hobbies are playing,doing video editing, and doing bakchodi.  </p>
+            <p>As a Student In IIITH I Am Devloping My Skills In Data Structure And Algorithm,Web Devlopment,C,C++ HTML, CSS, JavaScript, databases like SQLite and MongoDB and RISC-V other such coding skills.</p>
+            <p>Currently, I am focusing heavily on building my personality enhancing my communication and leadership skills .I am also equally interested in studying i will read or try out new tech tools when i will get free time. I am excited to keep learning and building.</p>
+        </section>
+
+        <section class="scroll-fade" style="margin-top: 50px;">
+            <h2>My Timeline</h2>
+            <ol id="timeline-list">
+
+                <li class="timeline-item">
+                    <button class="timeline-btn" aria-expanded="false">Class 6:Cleared Selection test of Jawahar Navodaya Vidhyalaya</button>
+                    <div class="timeline-content"><p>By taking admission in navodaya i have studied and enjoyed alot.  </p></div>
+                </li>
+
+                <li class="timeline-item">
+                    <button class="timeline-btn" aria-expanded="false">Class 10:Passed Class 10</button>
+                    <div class="timeline-content"><p>I have got 91.5% in 10 board out of 100% marks by my Hardwork </p></div>
+                </li>
+
+                <li class="timeline-item">
+                    <button class="timeline-btn" aria-expanded="false">Class 11: Cleared Selection test of COE</button>
+                    <div class="timeline-content"><p>Due to this i have got a chance for studying for jee from the navodaya getting guidence for clearing jee</p></div>
+                </li>
+
+                <li class="timeline-item">
+                    <button class="timeline-btn" aria-expanded="false">Class 12: Passed class 12</button>
+                    <div class="timeline-content"><p>I got total of 92% of marks in the 12th class out of 100% marks by my Hardwork </p></div>
+                </li>
+
+                <li class="timeline-item">
+                    <button class="timeline-btn" aria-expanded="false">Class 12+: Cleared Selection test of IIITH</button>
+                    <div class="timeline-content"><p>I have cleared the selection test of IIITH.</p></div>
+                </li>
+
+                <li class="timeline-item">
+                    <button class="timeline-btn" aria-expanded="false">My First Dsa assignment</button>
+                    <div class="timeline-content"><p>I have done assignement by my hardwork</p></div>
+                </li>
+            </ol>
+
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="timeline.js"></script> 
+</body>
+</html>
